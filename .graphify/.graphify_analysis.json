@@ -1,0 +1,101 @@
+{
+  "communities": {
+    "0": [
+      "config_openai_client",
+      "config_openai_openai",
+      "controllers_ai_controller_openai",
+      "src_config_openai_js",
+      "src_controllers_ai_controller_js"
+    ],
+    "1": [
+      "server_airoutes",
+      "server_app",
+      "server_cors",
+      "server_express",
+      "server_js"
+    ],
+    "2": [
+      "routes_ai_routes_generatecompletion",
+      "routes_ai_routes_router",
+      "src_routes_ai_routes_js"
+    ]
+  },
+  "cohesion": {
+    "0": 0.4,
+    "1": 0.4,
+    "2": 0.6666666666666666
+  },
+  "gods": [
+    {
+      "id": "server_express",
+      "label": "express",
+      "edges": 1,
+      "degree": 1
+    },
+    {
+      "id": "server_cors",
+      "label": "cors",
+      "edges": 1,
+      "degree": 1
+    },
+    {
+      "id": "server_airoutes",
+      "label": "aiRoutes",
+      "edges": 1,
+      "degree": 1
+    },
+    {
+      "id": "server_app",
+      "label": "app",
+      "edges": 1,
+      "degree": 1
+    },
+    {
+      "id": "config_openai_openai",
+      "label": "OpenAI",
+      "edges": 1,
+      "degree": 1
+    },
+    {
+      "id": "config_openai_client",
+      "label": "client",
+      "edges": 1,
+      "degree": 1
+    },
+    {
+      "id": "controllers_ai_controller_openai",
+      "label": "openai",
+      "edges": 1,
+      "degree": 1
+    },
+    {
+      "id": "routes_ai_routes_router",
+      "label": "router",
+      "edges": 1,
+      "degree": 1
+    },
+    {
+      "id": "routes_ai_routes_generatecompletion",
+      "label": "{ generateCompletion}",
+      "edges": 1,
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `express`, `cors`, `aiRoutes` to the rest of the system?",
+      "why": "9 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ],
+  "labels": {
+    "0": "Community 0",
+    "1": "Community 1",
+    "2": "Community 2"
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

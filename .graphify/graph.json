@@ -1,0 +1,254 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "community_labels": {
+      "0": "Community 0",
+      "1": "Community 1",
+      "2": "Community 2"
+    }
+  },
+  "topology_signature": "n=13;e=10;config_openai_client,config_openai_openai,controllers_ai_controller_openai,routes_ai_routes_generatecompletion,routes_ai_routes_router,server_airoutes,server_app,server_cors,server_express,server_js,src_config_openai_js,src_controllers_ai_controller_js,src_routes_ai_routes_js|config_openai_client\tsrc_config_openai_js\tcontains;config_openai_openai\tsrc_config_openai_js\tcontains;controllers_ai_controller_openai\tsrc_controllers_ai_controller_js\tcontains;routes_ai_routes_generatecompletion\tsrc_routes_ai_routes_js\tcontains;routes_ai_routes_router\tsrc_routes_ai_routes_js\tcontains;server_airoutes\tserver_js\tcontains;server_app\tserver_js\tcontains;server_cors\tserver_js\tcontains;server_express\tserver_js\tcontains;src_config_openai_js\tsrc_controllers_ai_controller_js\timports_from",
+  "nodes": [
+    {
+      "id": "server_js",
+      "label": "server.js",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L1",
+      "community": 1,
+      "community_name": "Community 1"
+    },
+    {
+      "id": "server_express",
+      "label": "express",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L2",
+      "community": 1,
+      "community_name": "Community 1"
+    },
+    {
+      "id": "server_cors",
+      "label": "cors",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L3",
+      "community": 1,
+      "community_name": "Community 1"
+    },
+    {
+      "id": "server_airoutes",
+      "label": "aiRoutes",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L5",
+      "community": 1,
+      "community_name": "Community 1"
+    },
+    {
+      "id": "server_app",
+      "label": "app",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L7",
+      "community": 1,
+      "community_name": "Community 1"
+    },
+    {
+      "id": "src_config_openai_js",
+      "label": "openai.js",
+      "file_type": "code",
+      "source_file": "src/config/openai.js",
+      "source_location": "L1",
+      "community": 0,
+      "community_name": "Community 0"
+    },
+    {
+      "id": "config_openai_openai",
+      "label": "OpenAI",
+      "file_type": "code",
+      "source_file": "src/config/openai.js",
+      "source_location": "L2",
+      "community": 0,
+      "community_name": "Community 0"
+    },
+    {
+      "id": "config_openai_client",
+      "label": "client",
+      "file_type": "code",
+      "source_file": "src/config/openai.js",
+      "source_location": "L4",
+      "community": 0,
+      "community_name": "Community 0"
+    },
+    {
+      "id": "src_controllers_ai_controller_js",
+      "label": "ai.controller.js",
+      "file_type": "code",
+      "source_file": "src/controllers/ai.controller.js",
+      "source_location": "L1",
+      "community": 0,
+      "community_name": "Community 0"
+    },
+    {
+      "id": "controllers_ai_controller_openai",
+      "label": "openai",
+      "file_type": "code",
+      "source_file": "src/controllers/ai.controller.js",
+      "source_location": "L1",
+      "community": 0,
+      "community_name": "Community 0"
+    },
+    {
+      "id": "src_routes_ai_routes_js",
+      "label": "ai.routes.js",
+      "file_type": "code",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L1",
+      "community": 2,
+      "community_name": "Community 2"
+    },
+    {
+      "id": "routes_ai_routes_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L1",
+      "community": 2,
+      "community_name": "Community 2"
+    },
+    {
+      "id": "routes_ai_routes_generatecompletion",
+      "label": "{ generateCompletion}",
+      "file_type": "code",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L2",
+      "community": 2,
+      "community_name": "Community 2"
+    }
+  ],
+  "links": [
+    {
+      "source": "server_js",
+      "target": "server_express",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L2",
+      "weight": 1,
+      "_src": "server_js",
+      "_tgt": "server_express",
+      "confidence_score": 1
+    },
+    {
+      "source": "server_js",
+      "target": "server_cors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L3",
+      "weight": 1,
+      "_src": "server_js",
+      "_tgt": "server_cors",
+      "confidence_score": 1
+    },
+    {
+      "source": "server_js",
+      "target": "server_airoutes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L5",
+      "weight": 1,
+      "_src": "server_js",
+      "_tgt": "server_airoutes",
+      "confidence_score": 1
+    },
+    {
+      "source": "server_js",
+      "target": "server_app",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L7",
+      "weight": 1,
+      "_src": "server_js",
+      "_tgt": "server_app",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_config_openai_js",
+      "target": "config_openai_openai",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/openai.js",
+      "source_location": "L2",
+      "weight": 1,
+      "_src": "src_config_openai_js",
+      "_tgt": "config_openai_openai",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_config_openai_js",
+      "target": "config_openai_client",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/openai.js",
+      "source_location": "L4",
+      "weight": 1,
+      "_src": "src_config_openai_js",
+      "_tgt": "config_openai_client",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_controllers_ai_controller_js",
+      "target": "src_config_openai_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/controllers/ai.controller.js",
+      "source_location": "L1",
+      "weight": 1,
+      "_src": "src_controllers_ai_controller_js",
+      "_tgt": "src_config_openai_js",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_controllers_ai_controller_js",
+      "target": "controllers_ai_controller_openai",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/controllers/ai.controller.js",
+      "source_location": "L1",
+      "weight": 1,
+      "_src": "src_controllers_ai_controller_js",
+      "_tgt": "controllers_ai_controller_openai",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_routes_ai_routes_js",
+      "target": "routes_ai_routes_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L1",
+      "weight": 1,
+      "_src": "src_routes_ai_routes_js",
+      "_tgt": "routes_ai_routes_router",
+      "confidence_score": 1
+    },
+    {
+      "source": "src_routes_ai_routes_js",
+      "target": "routes_ai_routes_generatecompletion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L2",
+      "weight": 1,
+      "_src": "src_routes_ai_routes_js",
+      "_tgt": "routes_ai_routes_generatecompletion",
+      "confidence_score": 1
+    }
+  ],
+  "hyperedges": []
+}

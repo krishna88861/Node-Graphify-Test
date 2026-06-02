@@ -1,0 +1,244 @@
+{
+  "nodes": [
+    {
+      "id": "server_js",
+      "label": "server.js",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_express",
+      "label": "express",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L2"
+    },
+    {
+      "id": "server_cors",
+      "label": "cors",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L3"
+    },
+    {
+      "id": "server_airoutes",
+      "label": "aiRoutes",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L5"
+    },
+    {
+      "id": "server_app",
+      "label": "app",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_config_openai_js",
+      "label": "openai.js",
+      "file_type": "code",
+      "source_file": "src/config/openai.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "config_openai_openai",
+      "label": "OpenAI",
+      "file_type": "code",
+      "source_file": "src/config/openai.js",
+      "source_location": "L2"
+    },
+    {
+      "id": "config_openai_client",
+      "label": "client",
+      "file_type": "code",
+      "source_file": "src/config/openai.js",
+      "source_location": "L4"
+    },
+    {
+      "id": "src_controllers_ai_controller_js",
+      "label": "ai.controller.js",
+      "file_type": "code",
+      "source_file": "src/controllers/ai.controller.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "controllers_ai_controller_openai",
+      "label": "openai",
+      "file_type": "code",
+      "source_file": "src/controllers/ai.controller.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_routes_ai_routes_js",
+      "label": "ai.routes.js",
+      "file_type": "code",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "routes_ai_routes_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "routes_ai_routes_generatecompletion",
+      "label": "{ generateCompletion}",
+      "file_type": "code",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L2"
+    }
+  ],
+  "edges": [
+    {
+      "source": "server_js",
+      "target": "express",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "server_js",
+      "target": "server_express",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "server_js",
+      "target": "cors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "server_js",
+      "target": "server_cors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L3",
+      "weight": 1
+    },
+    {
+      "source": "server_js",
+      "target": "volumes_siva_krishna_work_space_graphifyytest_src_routes_ai_routes",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "server_js",
+      "target": "server_airoutes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L5",
+      "weight": 1
+    },
+    {
+      "source": "server_js",
+      "target": "server_app",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "src_config_openai_js",
+      "target": "openai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/openai.js",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "src_config_openai_js",
+      "target": "config_openai_openai",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/openai.js",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "src_config_openai_js",
+      "target": "config_openai_client",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/openai.js",
+      "source_location": "L4",
+      "weight": 1
+    },
+    {
+      "source": "src_controllers_ai_controller_js",
+      "target": "src_config_openai_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/controllers/ai.controller.js",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_controllers_ai_controller_js",
+      "target": "controllers_ai_controller_openai",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/controllers/ai.controller.js",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_routes_ai_routes_js",
+      "target": "routes_ai_routes_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "src_routes_ai_routes_js",
+      "target": "volumes_siva_krishna_work_space_graphifyytest_src_controllers_ai_controller",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "src_routes_ai_routes_js",
+      "target": "controllers_ai_generatecompletion",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L2",
+      "weight": 1
+    },
+    {
+      "source": "src_routes_ai_routes_js",
+      "target": "routes_ai_routes_generatecompletion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/ai.routes.js",
+      "source_location": "L2",
+      "weight": 1
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "hyperedges": []
+}
